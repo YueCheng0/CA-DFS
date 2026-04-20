@@ -318,15 +318,15 @@ def main():
     l1_strengths=0.1
     group_strengths=0.01
     
-    learning_rates = 0.01
+    learning_rates = 0.001
     patience = 100 
     metrics_to_monitor = "ACC"
 
-    n_epochs = 1000
-    hidden_dim1 = 512
-    hidden_dim2 = 256
-    dropout_rate = 0.7
-    batch_size = 64
+    n_epochs = 50
+    hidden_dim1 = 128
+    hidden_dim2 = 64
+    dropout_rate = 0.2
+    batch_size = 32
 
     base_out = os.path.join(data_dir, "results_multiclass_DFS_raw_v2")
     os.makedirs(base_out, exist_ok=True)
